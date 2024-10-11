@@ -1,0 +1,243 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"> <!-- displays site properly based on user's device -->
+
+  <link rel="icon" type="image/png" sizes="32x32" href="./assets/images/favicon-32x32.png">
+  
+  <title>Frontend Mentor | Social links profile</title>
+
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&display=swap" rel="stylesheet">
+  <!-- Feel free to remove these styles or customise in your own stylesheet 👍 -->
+  <style>
+     *{
+      box-sizing: border-box;
+     }
+
+    
+
+    body{
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      flex-direction: column;
+      height: 800px;
+      
+      background-color: hsl(0, 0%, 8%);
+    }
+
+   
+
+    .main-container{
+    
+      
+      height: 75%;
+      width: 5%;
+      background-color: hsl(0, 0%, 12%);
+      border-radius: 10px;
+    }
+
+    .img-container{
+      height: 90px;
+      width: 25%;
+      border-radius: 45px;
+      background-color: hsl(0, 0%, 12%);
+      margin-left: 40%;
+      margin-top: 5%;
+    }
+    .profile-pic{
+      max-height:100%;
+      max-width:100%;
+      border-radius:100%;
+    }
+
+    .persons-name{
+      font-family: 'Inter', sans-serif;
+      font-weight:600;
+      font-size: 24px;
+      color: hsl(0, 0%, 100%);
+      margin-left: 30%;
+      padding-left: 2%;
+      margin-top: 3%;
+      width:50%;
+    }
+    .persons-location{
+      font-family: 'Inter', sans-serif;
+      font-weight: 600;
+      font-size: 14px;
+      color: hsl(75, 94%, 57%);
+      margin-left: 31%;
+      padding-left: 1%;
+      margin-top: 2%;
+      width:50%;
+    }
+    .desciption{
+      font-family: 'Inter';
+      color: hsl(0, 0%, 100%);
+      opacity:0.8;
+      font-size: 13px;
+      font-weight: 300;
+      margin-left: 28%;
+      padding-left: 5%;
+      margin-top:1%;
+      width: 70%;
+    }
+    .link-container{
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      flex-wrap: wrap;
+      margin-top: 1.5%;
+      margin-left: 14%;
+      margin-right: 14%;
+      background-color: hsl(0, 0%, 20%);
+      height:6.7%;
+      width: 75%;
+      border-radius: 6px;
+      font-family: 'Inter';
+      font-size: 13px;
+      color: hsl(0, 0%, 100%);
+      font-weight: 700;
+      transition: background-color 0.5s;
+    }
+    .link-container:hover{
+      background-color: hsl(75, 94%, 57%);
+      cursor: pointer;
+    }
+
+    @media (min-width: 400px) {
+        .main-container{
+          width: 70%;
+          height: 75%;
+        }
+        .desciption{
+          width: 90%;
+          margin-left: 10%;
+          padding-top: 5%;
+        }
+        .persons-location{
+          width: 100%;
+          margin-left: 27%;
+          font-size: 12px;
+        }
+        .persons-name{
+          width: 100%;
+          margin-left: 20%;
+        }
+      
+    }
+
+    @media (min-width: 640px) {
+        .main-container{
+          width: 75%;
+          height: 80%;
+        }
+        .desciption{
+          width: 90%;
+          margin-left: 25%;
+          padding-top: 5%;
+        }
+        .persons-location{
+          width: 100%;
+          margin-left: 36%;
+          font-size: 12px;
+        }
+        .persons-name{
+          width: 100%;
+          margin-left: 32%;
+        }
+      
+    }
+
+    @media (min-width: 768px) {
+        .main-container{
+          width: 75%;
+          height: 80%;
+        }
+        .desciption{
+          width: 90%;
+          margin-left: 30%;
+          padding-top: 5%;
+        }
+        .persons-location{
+          width: 100%;
+          margin-left: 39%;
+          font-size: 12px;
+        }
+        .persons-name{
+          width: 100%;
+          margin-left: 36%;
+        }
+        .img-container{
+          margin-left: 44%;
+        }
+      
+    }
+
+    @media (min-width: 1024px) {
+        .main-container{
+          width: 75%;
+          height: 92%;
+        }
+        .desciption{
+          width: 90%;
+          margin-left: 36%;
+          padding-top: 5%;
+        }
+        .persons-location{
+          width: 100%;
+          margin-left: 43%;
+          font-size: 12px;
+        }
+        .persons-name{
+          width: 100%;
+          margin-left: 41%;
+        }
+        .img-container{
+          margin-left: 46%;
+        }
+      
+    }
+
+  </style>
+</head>
+<body>
+  <div class="main-container">
+    <div class="img-container">
+      <img class="profile-pic" src="assets\images\avatar-jessica.jpeg">
+    </div>
+    <div class="persons-name">
+      Jessica Randall
+    </div>
+    <div class="persons-location">
+      London, United Kingdom
+    </div>
+    <div class="desciption">
+      "Front-end developer and avid reader."
+    </div>
+
+    <div class="link-container">
+      GitHub
+    </div>
+    <div class="link-container">
+      Frontend Mentor
+    </div>
+    <div class="link-container">
+      LinkedIn
+    </div>
+    <div class="link-container">
+      Twitter
+    </div>
+    <div class="link-container">
+      Instagram
+    </div>
+  </div>
+
+  
+  
+  
+</body>
+</html>
